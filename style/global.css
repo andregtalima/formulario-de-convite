@@ -7,8 +7,8 @@
     --text-sm: .875rem var(--font-family);
     --text-xs: .75rem var(--font-family);
 
-    --h2: 700 1.75rem/auto var(--font-baloo-2);
-    --h3: 700 1.125rem/auto var(--font-baloo-2);
+    --h2: 700 1.75rem var(--font-baloo-2);
+    --h3: 700 1.125rem var(--font-baloo-2);
 
     --input-base: #1c1f21;
     --input-stroke: #363b40;
@@ -39,6 +39,8 @@ body {
     font: var(--text-md);
     color: var(--color-text);
     overflow: hidden;
+    max-width: 1280px;
+    margin-inline: auto;
 }
 
 img {
