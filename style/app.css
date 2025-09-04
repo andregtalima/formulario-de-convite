@@ -1,0 +1,53 @@
+#app {
+    overflow: hidden;
+    background-color: var(--shape-background);
+    display: flex;
+    max-width: 1280px;
+    margin-inline: auto;
+    height: auto;
+    gap: 1.25rem;
+}
+
+aside {
+    overflow: hidden;
+    margin: 1.25rem;
+    position: relative;
+}
+
+.image {
+    width: 25rem;
+    height: 45.5rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+}
+
+.logo-img {
+    width: 2.86rem;
+    height: 3rem;
+}
+
+.logo-text h1 {
+    color: #ff598b;
+    font-family: var(--font-leckerli);
+    font-size: 2.5rem;
+}
+
+.logo-text p {
+    font: var(--text-md);
+    font-weight: 300;
+    color: var(--color-title);
+}
+
+main {
+    overflow: auto;
+    margin: 1.25rem;
+    background-color: var(--shape-body);
+    padding: 5rem 8.125rem;
+}
