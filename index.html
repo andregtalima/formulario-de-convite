@@ -9,28 +9,66 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:wght@300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/index.css" />
     <title>Document</title>
   </head>
   <body>
     <div id="app">
-        <aside>
-            <div class="image">
-                <img src="./assets/images/Background.png" alt="Imagem de uma fatia de bolor colorido, com uma vela de aniversário vermelha e branca">
+      <aside>
+        <div class="image">
+          <img
+            src="./assets/images/Background.png"
+            alt="Imagem de uma fatia de bolor colorido, com uma vela de aniversário vermelha e branca"
+          />
+        </div>
+        <div class="logo">
+          <div class="logo-img">
+            <img src="./assets/Logo.svg" alt="Logo festivite" />
+          </div>
+          <div class="logo-text">
+            <h1>Festivite</h1>
+            <p>Crie um convite digital para o seu evento</p>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <form>
+          <h2>Crie seu convite</h2>
+          <fieldset>
+            <div class="legend">
+              <img
+                src="./assets/icons/calendar.svg"
+                alt="ícone de calendário"
+              />
+              <legend>Sobre o evento</legend>
             </div>
-            <div class="logo">
-                <div class="logo-img">
-                    <img src="./assets/Logo.svg" alt="Logo festivite">
+            <div class="input-wrapper">
+                <label for="title">Título</label>
+                <input type="text" name="title" id="title" placeholder="Nome do evento">
+            </div>
+            <div class="flex">
+                <div class="input-wrapper flex-1">
+                    <label for="init-date">Início</label>
+                    <input type="datetime" name="init-date" id="init-date" placeholder="DD/MM/AAAA, --:--">
                 </div>
-                <div class="logo-text">
-                    <h1>Festivite</h1>
-                    <p>Crie um convite digital para o seu evento</p>
+                <div class="input-wrapper flex-1">
+                    <label for="find-date">Fim</label>
+                    <input type="datetime" name="find-date" id="find-date" placeholder="DD/MM/AAAA, --:--">
                 </div>
             </div>
-        </aside>
-        <main>
-            
-        </main>
+            <div class="flex">
+                <div class="input-wrapper flex-1">
+                    <label for="init-date">Início</label>
+                    input:
+                </div>
+                <div class="input-wrapper flex-1">
+                    <label for="find-date">Fim</label>
+                    <input type="datetime" name="find-date" id="find-date" placeholder="DD/MM/AAAA, --:--">
+                </div>
+            </div>
+          </fieldset>
+        </form>
+      </main>
     </div>
   </body>
 </html>

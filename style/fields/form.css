@@ -1,0 +1,28 @@
+form h2 {
+    font: var(--h2);
+    color: var(--color-title);
+    margin-bottom: 2.5rem;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+}
+
+.legend img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.legend legend {
+    font: var(--h3);
+    color: var(--color-title);
+}

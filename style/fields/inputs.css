@@ -1,0 +1,19 @@
+input {
+    appearance: none;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+    padding: .8125rem 1rem;
+    width: 100%;
+}
+
+input::placeholder {
+    color: var(--input-placeholder);
+}
+
+label {
+    font: var(--text-sm);
+    color: var(--color-text);
+    display: inline-block;
+    margin-bottom: .75rem;
+}
