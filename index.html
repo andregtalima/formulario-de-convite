@@ -32,8 +32,8 @@
         </div>
       </aside>
       <main>
-        <form>
-          <h2>Crie seu convite</h2>
+        <h2>Crie seu convite</h2>
+        <form method="post" enctype="multipart/form-data">
           <fieldset>
             <div class="legend">
               <img
@@ -43,28 +43,209 @@
               <legend>Sobre o evento</legend>
             </div>
             <div class="input-wrapper">
-                <label for="title">Título</label>
-                <input type="text" name="title" id="title" placeholder="Nome do evento">
+              <label for="title">Título</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="Nome do evento"
+              />
             </div>
             <div class="flex">
-                <div class="input-wrapper flex-1">
-                    <label for="init-date">Início</label>
-                    <input type="datetime" name="init-date" id="init-date" placeholder="DD/MM/AAAA, --:--">
-                </div>
-                <div class="input-wrapper flex-1">
-                    <label for="find-date">Fim</label>
-                    <input type="datetime" name="find-date" id="find-date" placeholder="DD/MM/AAAA, --:--">
-                </div>
+              <div class="input-wrapper flex-1">
+                <label for="init-date">Início</label>
+                <input
+                  type="datetime"
+                  name="init-date"
+                  id="init-date"
+                  placeholder="DD/MM/AAAA, --:--"
+                />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="find-date">Fim</label>
+                <input
+                  type="datetime"
+                  name="find-date"
+                  id="find-date"
+                  placeholder="DD/MM/AAAA, --:--"
+                />
+              </div>
             </div>
             <div class="flex">
-                <div class="input-wrapper flex-1">
-                    <label for="init-date">Início</label>
-                    input:
+              <div class="input-wrapper flex-1">
+                <label for="type">Tipo</label>
+                <div class="radio-inner">
+                  
                 </div>
-                <div class="input-wrapper flex-1">
-                    <label for="find-date">Fim</label>
-                    <input type="datetime" name="find-date" id="find-date" placeholder="DD/MM/AAAA, --:--">
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="location">Local</label>
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="Link ou endereço"
+                />
+              </div>
+            </div>
+            <div class="input-wrapper">
+                <label for="description">Descrição</label>
+                <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" cols="30" rows="6"></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="legend">
+                <img src="./assets/icons/paintbrush-vertical.svg" alt="ícone de pincel representado um status de personalização">
+                <legend>Personalização</legend>
+            </div>
+            <div class="input-wrapper">
+                <label for="color">Cor principal</label>
+                <div class="container-colors">
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="brand-light">
+                    </div>
+                  </div>
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="navy">
+                    </div>
+                  </div>
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="purple">
+                    </div>
+                  </div>
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="fuschia">
+                    </div>
+                  </div>
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="pink">
+                    </div>
+                  </div>
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="danger">
+                    </div>
+                  </div>
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="orange">
+                    </div>
+                  </div>
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="yellow">
+                    </div>
+                  </div>
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="lime">
+                    </div>
+                  </div>
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="green">
+                    </div>
+                  </div>
+                  <div class="content-color">
+                    <div class="color">
+                      <input type="button" name="color" id="cyan">
+                    </div>
+                  </div>
                 </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="event-theme">Tema do evento</label>
+              <div class="checkbox-wrapper">
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/birthday.png" alt="Foto com tema de aniversário">
+                  </div>
+                  <p>Aniversário</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/children's.png" alt="Foto com tema de infantil">
+                  </div>
+                  <p>Infantil</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/graduation.png" alt="Foto com tema de formatura">
+                  </div>
+                  <p>Formatura</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/marriage.png" alt="Foto com tema de casamento">
+                  </div>
+                  <p>Casamento</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/baby tea.png" alt="Foto com tema de chá de bebê">
+                  </div>
+                  <p>Chá de bebê</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/bridal shower.png" alt="Foto com tema de chá de panela">
+                  </div>
+                  <p>Chá de panela</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/carnival.png" alt="Foto com tema de carnaval">
+                  </div>
+                  <p>Carnaval</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/easter.png" alt="Foto com tema de páscoa">
+                  </div>
+                  <p>Páscoa</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/Saint John.png" alt="Foto com tema de são joão">
+                  </div>
+                  <p>São João</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/halloween.png" alt="Foto com tema de halloween">
+                  </div>
+                  <p>Halloween</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/christmas.png" alt="Foto com tema natalino">
+                  </div>
+                  <p>Natal</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+                <div class="card-inner">
+                  <div class="img">
+                    <img src="./assets/images/other.png" alt="Foto com tema outros">
+                  </div>
+                  <p>Outros</p>
+                  <input type="checkbox" name="event-theme" id="event-theme">
+                </div>
+              </div>
             </div>
           </fieldset>
         </form>
