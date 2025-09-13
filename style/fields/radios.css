@@ -1,0 +1,6 @@
+.radio-inner {
+    width: 17rem;
+    height: 3rem;
+    background-color: var(--input-base);
+    position: relative;
+}

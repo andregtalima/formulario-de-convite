@@ -1,14 +1,20 @@
-input {
+input, textarea {
     appearance: none;
     background-color: var(--input-base);
-    border: 1px solid var(--input-stroke);
+    border: 2px solid transparent;
+    outline: 1px solid var(--input-stroke);
     border-radius: .5rem;
-    padding: .8125rem 1rem;
+    padding: 1rem;
     width: 100%;
+    color: var(--color-text);
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
     color: var(--input-placeholder);
+}
+
+#type {
+    height: 3rem;
 }
 
 label {
@@ -16,4 +22,9 @@ label {
     color: var(--color-text);
     display: inline-block;
     margin-bottom: .75rem;
+}
+
+input:focus-within, textarea:focus-within {
+    outline: 1px solid var(--brand-light);
+    border: 2px solid transparent;
 }

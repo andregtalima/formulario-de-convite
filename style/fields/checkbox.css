@@ -1,0 +1,42 @@
+.checkbox-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+    gap: .5rem;
+}
+
+.card-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--shape-button);
+    width: 8.375rem;
+    border-radius: .5rem;
+    padding: .25rem;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.card-inner:focus-within {
+    outline: 1px solid var(--brand-light);
+    border: 2px solid transparent;
+}
+
+.card-inner:hover {
+    background-color: var(--shape-hover);
+}
+
+.card-inner p {
+    font: var(--text-sm);
+    color: var(--color-title);
+}
+
+.card-inner input, .card-inner input:focus-within, .card-inner input:hover {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+}
