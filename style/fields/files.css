@@ -1,0 +1,95 @@
+.checkbox-inner {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    .light {
+        display: none;
+    }
+
+    &:has(:checked) {
+        .light {
+            display: block;
+        }
+
+        .night {
+            display: none;
+        }
+    }
+}
+
+.checkbox {
+    position: relative;
+    width: 4rem;
+}
+
+.checkbox-inner input[type="checkbox"] {
+    width: 100%;
+    border-radius: 999px;
+    inset: 0;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.checkbox-inner input[type="checkbox"]:checked {
+    background-color: var(--brand-light);
+}
+
+.checkbox-inner input[type="checkbox"]::before {
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--input-stroke);
+    position: absolute;
+    border-radius: 50%;
+    top: 15%;
+    left: 5%;
+}
+
+.checkbox-inner input:checked[type="checkbox"]::before {
+    left: 60%;
+    background-color: var(--color-title);
+}
+
+.checkbox-inner span {
+    color: var(--color-title);
+    font: var(--text-sm);
+}
+
+.file-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.file-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 35%;
+    background-color: var(--shape-button);
+    gap: .5rem;
+    margin-left: 1rem;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    justify-content: center;
+}
+
+.file-inner input[type="file"] {
+    background-color: transparent;
+    outline: none;
+    font: var(--text-sm);
+    color: var(--input-placeholder);
+}
+
+input[type="file"]:valid {
+    color: var(--color-text);
+}
+
+.file-inner input[type="file"]::file-selector-button {
+    opacity: 0;
+    inset: 0;
+    cursor: pointer;
+    padding-bottom: .7rem;
+}
