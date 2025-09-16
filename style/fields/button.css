@@ -1,0 +1,25 @@
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+}
+
+.button-wrapper button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    width: 11rem;
+    height: 3rem;
+    background-color: var(--brand-dark);
+    border: none;
+    border-radius: .5rem;
+    color: var(--color-title);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-wrapper button img {
+    width: 1.25rem;
+    height: 1.25rem;
+}

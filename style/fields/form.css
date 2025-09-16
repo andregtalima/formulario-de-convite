@@ -26,3 +26,8 @@ fieldset {
     font: var(--h3);
     color: var(--color-title);
 }
+
+.border-line {
+    border-bottom: 1px solid var(--input-stroke);
+    margin-block: 3rem;
+}
