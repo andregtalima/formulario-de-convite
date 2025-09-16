@@ -374,9 +374,55 @@
             </div>
             <div class="input-wrapper">
               <label for="name">Nome</label>
-              <input type="text" required>
+              <input type="text" required placeholder="Nome completo"/>
+            </div>
+            <div class="input-wrapper flex">
+              <div class="flex-1">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="exemplo@email.com"/>
+              </div>
+              <div class="flex-1">
+                <label for="phone">Telefone</label>
+                <input type="tel" name="phone" id="phone" placeholder="(99) 99999-9999" />
+              </div>
+            </div>
+            <div class="border-line"></div>
+            <div class="checkboxs">
+              <div class="terms">
+                <div class="checkbox-custom">
+                  <div class="check">
+                    <img src="./assets/icons/check.svg" alt="ícone de check">
+                  </div>
+                  <input type="checkbox" name="terms" id="terms">
+                </div>
+                <p>Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span></p>
+              </div>
+              <div class="terms">
+                <div class="checkbox-custom">
+                  <div class="check">
+                    <img src="./assets/icons/check.svg" alt="ícone de check">
+                  </div>
+                  <input type="checkbox" name="terms" id="terms">
+                </div>
+                <p>Aceito receber atualizações e promoções por e-mail</p>
+              </div>
+              <div class="terms">
+                <div class="checkbox-custom">
+                  <div class="check">
+                    <img src="./assets/icons/check.svg" alt="ícone de check">
+                  </div>
+                  <input type="checkbox" name="terms" id="terms">
+                </div>
+                <p>Aceito receber atualizações e promoções por SMS</p>
+              </div>
             </div>
           </fieldset>
+          <div class="button-wrapper">
+            <button>
+              <img src="./assets/icons/ticket.svg" alt="ícone de ingresso">
+              Gerar convite
+            </button>
+          </div>
         </form>
       </main>
     </div>
