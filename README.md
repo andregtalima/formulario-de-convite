@@ -32,7 +32,7 @@ A interface é pensada para simular o preenchimento de informações de um event
 ---
 
 ## 📸 Preview
-*(adicione aqui um print da tela principal do formulário)*  
+![Demonstração do formulário]( 
 
 ---
 
