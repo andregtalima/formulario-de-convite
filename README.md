@@ -33,7 +33,7 @@ A interface é pensada para simular o preenchimento de informações de um event
 
 ## 📸 Preview
 
-<video src="./" controls autoplay loop muted width="600"></video>
+<video src="./preview.mp4" controls autoplay loop muted width="600"></video>
 
 ---
 
