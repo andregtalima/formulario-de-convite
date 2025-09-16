@@ -28,3 +28,32 @@ input:focus-within, textarea:focus-within {
     outline: 1px solid var(--brand-light);
     border: 2px solid transparent;
 }
+
+input[type="text"] {
+
+    &:invalid {
+        border: 1px solid var(--danger);
+    }
+
+    &[required] + .error {
+
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        margin-top: .5rem;
+        
+        img {
+            width: 1rem;
+            height: fit-content;
+        }
+
+        span {
+            font: var(--text-xs);
+            color: var(--danger);
+        }
+    }
+
+    &:valid + .error {
+        display: none;
+    }
+}
