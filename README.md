@@ -32,7 +32,8 @@ A interface é pensada para simular o preenchimento de informações de um event
 ---
 
 ## 📸 Preview
-![Demonstração do formulário]( 
+
+<video src="./" controls autoplay loop muted width="600"></video>
 
 ---
 
