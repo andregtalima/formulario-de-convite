@@ -33,11 +33,11 @@ A interface é pensada para simular o preenchimento de informações de um event
 
 ## 📸 Preview
 
-<video src="./preview.mp4" controls autoplay loop muted width="600"></video>
+<video src="preview.mp4" controls autoplay loop muted width="600"></video>
 
 ---
 
 ## 📦 Como executar
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone git@github.com:andregtalima/formulario-de-convite.git
