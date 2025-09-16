@@ -33,7 +33,7 @@ A interface é pensada para simular o preenchimento de informações de um event
 
 ## 📸 Preview
 
-<video src="preview.mp4" controls autoplay loop muted width="600"></video>
+https://github.com/andregtalima/formulario-de-convite/raw/master/preview.mp4
 
 ---
 
